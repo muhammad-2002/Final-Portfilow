@@ -1,0 +1,410 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans',sans-serif;
+
+}
+body{
+    margin: 0;
+    
+}
+/* for desktop */
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+h1{
+    color: white;
+    font-size: 2.1rem;
+    text-align: center;
+}
+h2{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+p{
+    text-align: center;
+    
+}
+.dotted-hr{
+  width: 150px;
+  border: dotted white 6px;
+  border-bottom: none;
+  margin: 20px auto;
+  
+  
+}
+
+/* navbar starts for here */
+.navbar{
+    background-color: rgb(6, 114, 117);
+    text-align: center;
+    padding: 1% 7%;
+    
+}
+.navbar h1{
+    margin: 0px;
+    
+}
+.navbar-image img{
+height: 100px;
+width: 100px;
+
+}
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.navbar-title h1{
+
+}
+.navbar-menu a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(128, 128, 128);
+    padding: 10px;
+    margin:10px 0px;
+    border-radius: 10px;
+}
+.navbar-menu a:hover{
+    background-color: hotpink;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* navbar ends here */
+
+/* profile start for here  */
+.profile{
+    padding: 130px 10px;
+    text-align: center;
+    position: relative;
+
+}
+
+.top-image{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: 2s;
+}
+.top-image:hover{
+    transform: rotate(360deg);
+}
+.profile-dec h1{
+    color: black;
+        font-family: 'Satisfy',cursive;
+        font-size: 3rem;
+}
+.profile-dec p{
+    color: gray;
+    text-align: center;
+    margin:  0 auto 20px auto;
+    width: 90%;
+}
+.bottom-image{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transition: transform 2s;
+}
+.bottom-image:hover{
+    transform: rotate(360deg);
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* profile start for here  */
+
+
+/* about start for here  */
+.about-me{
+    background-color: rgb(6, 114, 117);
+    padding: 7% 1%;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+}
+.about-me-image img{
+    width: 200px;
+    height: 220px;
+    border: solid white 3px;
+    border-radius: 50%;
+}
+.about-me-dec{
+    color: white;
+    
+}
+.btn{
+    border: none;
+    background-color: rgb(3, 41, 37);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.about-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* about ends here  */
+
+/* profational expirence starts hear  */
+.profational-experiance{
+    padding: 1% 0%;
+}
+.profational-experiance .card-container{
+    background-color: gray;
+    border-radius: 5px;
+    padding: 10px 30px;
+    height: 600px;
+}
+.profational-experiance .card-container:hover{
+    box-shadow:  0 4px 8px 5px black;
+}
+.card-icon, .card-icon1{
+    text-align: center;
+    padding: 10px;
+    
+}
+.profational-experiance .card-icon1 img{
+    height: 100px;
+    width: 250px;
+}
+.profational-experiance .card-icon img{
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.card-headding h2{
+    background-color: rgb(56, 52, 52);
+    padding:5px  5px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+.skils-container{
+
+}
+.skils-container li {
+    list-style-type: none;
+    text-transform: capitalize;
+    margin: 30px 10px;
+    font-weight: bolder;
+    color: white;
+    position: relative;
+}
+.skils-container li::before{
+    position: absolute;
+    content: '';
+  top: calc(100% + 5px);
+  left: 0px;
+    background-color: rgb(134, 160, 160);
+    width:100%;
+    height: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.skils-container li::after{
+    position: absolute;
+    content: '';
+  top: calc(100% + 5px);
+  left: 0px;
+    background-color: rgb(84, 221, 221);
+    width:0%;
+    height: 10px;
+    border-radius: 10px;
+    border: none;
+    animation-duration: 3s;
+    animation-delay: 0.7s;
+    animation-iteration-count:1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.skils-container li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to {
+      width: 90%;
+      background-color:rgb(204, 50, 50);
+    }
+}
+.skils-container li.cs::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to {
+      width: 70%;
+    }
+}
+.skils-container li.js::after{
+    animation-name: js;
+}
+
+@keyframes js{
+    to {
+      width: 60%;
+      background-color: darkkhaki;
+    }
+}
+.skils-container li.j::after{
+    animation-name: j;
+}
+
+@keyframes j{
+    to {
+      width: 50%;
+      background-color: darkorange;
+    }
+}
+.skils-container li.b::after{
+    animation-name: b;
+}
+
+@keyframes b{
+    to {
+      width: 40%;
+      background-color: rgb(80, 50, 13);
+    }
+}
+.skils-container li.p::after{
+    animation-name: p;
+}
+
+@keyframes p{
+    to {
+      width: 30%;
+      background-color: rgb(2, 133, 194);
+    }
+}
+.skils-container li.c::after{
+    animation-name: c;
+}
+
+@keyframes c{
+    to {
+      width: 20%;
+      background-color: rgb(116, 238, 34);
+    }
+}
+.profational-experiance::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* profational expirence starts hear  */
+
+
+/* acheivements starts for hear  */
+
+.achievment_contact{
+      background-color: rgb(6, 114, 117);
+      padding: 2% 7%;
+      color: white;
+
+  }
+  .achievment-heading h2{
+      text-align: center;
+      font-size: 1.6rem;
+    
+  }
+.achievments-dec p{
+    text-align:justify;
+}
+  .achievment_contact::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+.contact-me{
+    text-align: center;
+}
+
+  .contact-dec input ,textarea{
+      text-align: center;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+      margin: 5px;
+      resize: none;
+      font-size: 0.9rem;
+  }
+  .contact-dec button{
+      border: none;
+      text-align: center;
+      padding: 10px;
+      font-size: .9rem;
+      width: 70px;
+      margin: 10px;
+      border-radius: 5px;
+      background-color: rgb(58, 182, 204);
+      color: white;
+      cursor: pointer;
+  }
+  .achievment_contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* acheivements starts for hear  */
+
+
+
+/* footer start for hear  */
+
+.footer{
+     background-color: black;
+    text-align: center;
+    padding: 1% 7%;
+}
+.footer-menu a{
+    display: block;
+    margin: 15px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    background-color: gray;
+    border-radius: 100px;
+    
+   
+}
+
+.fotter-des{
+    font-size: 1rem;
+    color: white;
+}
+.footer-menu a:hover{
+    color: pink;
+}
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* footer start for hear  */

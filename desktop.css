@@ -1,0 +1,115 @@
+.col-1 {width:8.33%;}
+.col-2 {width:16.66%;}
+.col-3 {width:25%;}
+.col-4 {width:33.33%;}
+.col-5{width:41.66%;}
+.col-6 {width:50%;}
+.col-7 {width:58.33%;}
+.col-8 {width:66.66%;}
+.col-9 {width:75%;}
+.col-10 {width:83.33%;}
+.col-12 {width:91.66%;}
+.col-12 {width:100%;}
+/* navbar starts for here  */
+.navbar-image{
+    text-align: left;
+}
+.navbar-title h1{
+    text-align: right;
+    margin-top: 30px;
+    font-size: 2.2rem;
+}
+.navbar-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar-menu a{
+    background-color: transparent;
+    font-size: 1rem;
+    margin-top: 35px;
+    padding: 7px 10px;
+}
+.navbar-menu a:hover{
+    background-color: gray;
+}
+/* navbar ends  here  */
+
+/* profile starts for here  */
+   .top-image{
+       top: 80px;
+       right:150px;
+   }
+   .top-image:hover{
+    width: 120px;
+}
+   .bottom-image{
+    bottom: 50px;
+    left:120px;
+}
+.bottom-image:hover{
+    width: 120px;
+}
+.profile-dec p{
+    width: 50%;
+}
+/* profile ends here  */
+
+/* about-me start for here  */
+.about-me-image{
+  position: relative;
+}
+.about-me-image img{
+    width: 250px;
+    height: 270px;
+    position: absolute;
+    top:50px;
+    left: 90px;
+   
+}
+.about-me-dec p{
+    text-align: justify;
+    
+}
+.btn{
+    width: 150px;
+    font-size: 1rem;
+}
+/* about-me ends for here  */
+
+
+/* Achievments starts for heare */
+
+.contact-me{
+     padding-left:15px;
+     padding-right: 15px;
+}
+.more-contact{
+    padding-left:15px;
+}
+.Achievments{
+    padding-right: 15px;
+}
+
+
+
+/* Achievments starts for heare */
+
+
+
+/* footer starts for heare  */
+
+.footer-menu a{
+    display: inline;
+   background-color: transparent;
+   padding: 10px;
+}
+.footer-menu {
+ margin-top: 30px;
+}
+.fotter-des{
+    margin-top: 30px;
+}
+.footer{
+    height: 120px;
+}
+/* footer starts for heare  */
